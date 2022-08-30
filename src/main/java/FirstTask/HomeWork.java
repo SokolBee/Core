@@ -12,7 +12,7 @@ public class HomeWork {
     public static void main(String[] args) {
 
         // task first, to fill tow-dimensional array with random ints
-        // I would prefer to use ThreadLocalRandom or relatively 'new' class Random in real prod code,
+        // I would prefer to use ThreadLocalRandom or new class RandomGenerator in real prod code,
         // but working that solution out was also pretty fun =).
 
         Integer[][] randomIntArray = new Integer[10][10];
