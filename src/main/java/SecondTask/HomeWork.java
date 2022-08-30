@@ -5,9 +5,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.ToIntFunction;
 
+
 public class HomeWork {
     public static void main(String[] args) {
-
         //task second, I use here the ShellSort, since that pretty rare used one
         // comparing to Bubble Sort, Selection Sort or Insertion Sort etc.
         //as well as a relatively simple algorithm with a performance of approximately O(n.pow(3/2))
@@ -100,7 +100,9 @@ public class HomeWork {
             Node current = first;
             while (current.next != last) {
                 current = current.next;
-                if (current.next != last && current.next.value.equals(current.value)) {
+                if (current.next != last
+                        && current.next.value != null
+                        && current.next.value.equals(current.value)) {
                     delete(current);
                 }
             }
